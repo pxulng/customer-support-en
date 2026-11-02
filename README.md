@@ -107,4 +107,4 @@ Important setting: set "Maximum Number of Tokens" to 4000, otherwise the model's
 - Demo video and user guide.
 - A test on real requests: not done, and it is the project's main limitation.
 
-*Author: Paul Nguyen Phuoc, [LinkedIn](https://www.linkedin.com/in/paul-nguyen-phuoc-336456294)*
+Paul Nguyen Phuoc [LinkedIn](https://www.linkedin.com/in/paul-nguyen-phuoc-336456294)
