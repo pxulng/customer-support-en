@@ -1,0 +1,81 @@
+﻿id;set;origin;difficulty;expected_procedure;expected_decision;request;key_points
+D001;test;SYNTHETIC;easy;06;answer;What is this t-shirt made of?;Composition shown on the product sheet
+D002;test;SYNTHETIC;ambiguous;01;answer;My order from Saturday still hasn't shipped, and it's Tuesday.;"Shipping within 48 working hours; if exceeded: apology, tracking within 24 h"
+D003;test;SYNTHETIC;trap;02;escalate;I'm at day 40 but it was a birthday present, can you make a gesture?;Request for an exception: escalate
+D004;test;SYNTHETIC;easy;06;answer;I'm between M and L for a jacket, which should I take?;"Size guide; compare with a well-fitting garment"
+D005;test;SYNTHETIC;ambiguous;03;answer;My running shoes are worn out after 18 months of intensive use.;Normal wear not covered, explain without blaming
+D006;test;SYNTHETIC;trap;08;escalate;Your service is a disgrace, give me my money back right now or I'm going to social media.;Very angry customer + threat of public review: escalate
+D007;validation;SYNTHETIC;easy;01;answer;Where can I track my parcel?;"My account > My orders; tracking email"
+D008;test;SYNTHETIC;ambiguous;06;answer;Does this tent sleep 3 adults?;Answer only if the capacity appears on the product sheet
+D009;test;SYNTHETIC;ambiguous;08;answer;I'm disappointed with the service, my order arrived late.;Acknowledge receipt, apologise, empathetic tone
+D010;test;SYNTHETIC;easy;04;answer;Can you resend my invoice?;Invoice resent on request, no condition
+D011;test;SYNTHETIC;easy;02;answer;What is the deadline to return an item?;30 days after receipt
+D012;validation;SYNTHETIC;easy;03;answer;A button on my puffer jacket fell off on the first day.;"Defect: description, photos, order no.; replacement or refund; free label"
+D013;test;SYNTHETIC;easy;01;answer;Hello, has my order left yet? I haven't received an email.;"Shipping within 48 working hours; tracking email sent at shipping; tracking in My account"
+D014;test;SYNTHETIC;easy;04;answer;My promo code doesn't work.;Check validity date and minimum purchase
+D015;test;SYNTHETIC;easy;05;answer;Can I change the size of my order that is being prepared?;Change possible if stock available, before shipping
+D016;test;SYNTHETIC;easy;01;answer;I didn't receive the shipping confirmation email.;"Email with tracking number sent at shipping; tracking in My account"
+D017;validation;SYNTHETIC;easy;02;answer;I no longer have the original packaging, is that a problem for a return?;Labels and original packaging required
+D018;test;SYNTHETIC;ambiguous;08;answer;You refuse my late return, I think that's unfair.;Explain the rule with empathy, without softening it
+D019;test;SYNTHETIC;easy;06;answer;What is the difference between size S and M for this t-shirt?;Refer to the size guide on the product sheet
+D020;test;SYNTHETIC;easy;01;answer;Where is my order? It's been 2 days since I placed it.;"Shipping within 48 working hours; tracking in My account > My orders"
+D021;test;SYNTHETIC;easy;02;answer;I changed my mind, can I send back my bag received 3 days ago, never used?;"Yes, within 30 days with labels and packaging; return label"
+D022;test;SYNTHETIC;trap;07;escalate;I think my account has been hacked, there are orders I didn't place.;Suspected account hacking: escalate
+D023;validation;SYNTHETIC;easy;02;answer;How long to be refunded after my return?;7 working days after receipt and inspection
+D024;test;SYNTHETIC;easy;02;answer;How do I return an item?;"Within 30 days, unworn product; return label and steps"
+D025;test;SYNTHETIC;trap;02;answer;I want to return a swimsuit that I tried on and whose packaging I opened.;Hygiene exclusion: polite refusal
+D026;test;SYNTHETIC;trap;02;answer;I want a refund on a bag bought at -60% during the sales.;Sales over 50% off: exchange only, no refund
+D027;test;SYNTHETIC;easy;05;answer;How can I know whether my order can still be cancelled?;"Possible as long as the status is ""in preparation"""
+D028;test;SYNTHETIC;ambiguous;06;escalate;Is this backpack compatible with a hydration bladder from another brand?;Information absent from the product sheet: escalate
+D029;validation;SYNTHETIC;ambiguous;03;answer;I have a defect on a sweater received 20 days ago, how do I send it back?;"Within 30 days: treat as a defect; free label"
+D030;test;SYNTHETIC;easy;01;answer;My parcel is announced for tomorrow, how can I track it precisely?;"Tracking number by email; My account > My orders"
+D031;test;SYNTHETIC;easy;03;answer;My backpack has a manufacturing defect, what should I send you?;Description of the defect, photos, order no.
+D032;validation;SYNTHETIC;trap;01;escalate;The carrier confirms my parcel is lost. Refund me today or I'll contact the consumer-protection authority.;Confirmed lost parcel + threat of report: escalate
+D033;test;SYNTHETIC;ambiguous;01;answer;Actually my parcel was at my neighbour's, all good, thanks!;"Thank and close; no action or escalation"
+D034;test;SYNTHETIC;easy;01;answer;What is the delivery time for express?;Express: 24 to 48 h
+D035;validation;SYNTHETIC;easy;02;answer;Is the return free?;"Free at a pickup point above €50; otherwise €4.90"
+D036;test;SYNTHETIC;ambiguous;04;answer;I was charged twice for the same order.;One of the two is a temporary authorisation released within 5 working days
+D037;test;SYNTHETIC;ambiguous;02;answer;You received my return 9 working days ago and I don't have my refund.;"7-working-day deadline exceeded: check receipt date; not yet 14 days"
+D038;test;SYNTHETIC;easy;05;answer;I want to cancel my order placed an hour ago.;"Cancellation possible before shipping; refund within 7 working days"
+D039;test;SYNTHETIC;easy;02;answer;Can I exchange my size 42 for a 43?;Exchange possible depending on stock
+D040;validation;SYNTHETIC;ambiguous;01;answer;Tracking says delivered but I haven't received anything since yesterday.;"Check neighbours and pickup point; escalate if not found after 48 h"
+D041;test;SYNTHETIC;ambiguous;01;escalate;My parcel has been marked delivered for 5 days, I asked the neighbours and the pickup point, nothing. I want a resend or a refund.;Not found after 48 h: escalate (resend or refund outside the assistant's scope)
+D042;test;SYNTHETIC;easy;01;answer;I'd like to know the status of my order no. 48213.;Tracking in My account > My orders
+D043;test;SYNTHETIC;ambiguous;03;answer;My trainers are coming unstuck after 3 months, is that normal?;"2-year warranty; ask for photos and order no.; probable defect"
+D044;test;SYNTHETIC;ambiguous;01;answer;My order has been in preparation for 4 working days, nothing is moving.;More than 48 working hours: apology, remaining time, tracking within 24 h
+D045;test;SYNTHETIC;easy;07;answer;I'm not receiving the password reset email.;Check the junk mail folder, then the account address
+D046;test;SYNTHETIC;ambiguous;02;escalate;It's been 16 days since I sent my parcel back and I still haven't been refunded.;Refund not received beyond 14 days: escalate
+D047;validation;SYNTHETIC;easy;01;answer;My parcel left 3 days ago and I've received nothing, should I worry?;Standard time 3 to 5 working days: not yet late
+D048;test;SYNTHETIC;trap;aucune;escalate;I bought this bag in store, can I return it to you online?;In-store purchases absent from the procedures: escalate
+D049;test;SYNTHETIC;ambiguous;01;answer;I ordered on Monday, it's Thursday and I have no tracking number.;More than 48 working hours: apology, check, tracking within 24 h
+D050;test;SYNTHETIC;easy;06;answer;Will this item be back in stock?;"Refer to the product sheet; no restocking promise"
+D051;test;SYNTHETIC;easy;01;answer;Hello, I haven't received an email with my tracking number, I ordered yesterday. Can you help me?;"Shipping within 48 working hours; tracking email sent at shipping; tracking in My account"
+D052;test;SYNTHETIC;easy;07;answer;I forgot my password.;Reset link by email, valid 24 h
+D053;validation;SYNTHETIC;easy;04;answer;Can I pay in three instalments?;Payment in 3 instalments at no cost from €100
+D054;test;SYNTHETIC;ambiguous;04;escalate;I've been charged twice for 8 working days, both amounts are still there.;Double charge confirmed after 5 working days: escalate
+D055;test;SYNTHETIC;easy;05;answer;I'd like to change the colour of the item in my order that is being prepared.;Change possible before shipping, depending on stock
+D056;test;SYNTHETIC;easy;07;answer;How do I change the email address of my account?;My account: change of contact details
+D057;test;SYNTHETIC;trap;02;answer;I want to return a jersey personalised with my name.;Personalised products excluded from return
+D058;test;SYNTHETIC;ambiguous;03;answer;My water bottle has leaked since the first use 3 weeks ago, photos attached.;"Confirmed defect: replacement or refund; free label"
+D059;validation;SYNTHETIC;easy;06;answer;Is this jacket waterproof?;Answer with the characteristic from the product sheet
+D060;test;SYNTHETIC;ambiguous;05;answer;I want to cancel my order, it left yesterday.;No longer cancellable once shipped: return procedure
+D061;test;SYNTHETIC;easy;06;answer;I wear a 42 shoe, which size of shorts should I take?;"Refer to the size guide; do not guess"
+D062;test;SYNTHETIC;easy;01;answer;How long does it take to receive my order with standard delivery?;Standard: 3 to 5 working days after shipping
+D063;test;SYNTHETIC;ambiguous;06;answer;Is this bag machine-washable?;Answer only if care instructions appear on the product sheet
+D064;validation;SYNTHETIC;easy;02;answer;Will I be refunded on my card or with a credit note?;Refund by the same payment method as the order
+D065;test;SYNTHETIC;easy;01;answer;What are the standard and express delivery times?;"Standard 3 to 5 working days; express 24 to 48 h"
+D066;test;SYNTHETIC;easy;03;answer;How long is the warranty?;Legal conformity warranty: 2 years from delivery
+D067;test;SYNTHETIC;easy;03;answer;The seam of my bag came apart after 2 weeks.;"Defect: ask for description, photos, order no.; replacement or refund; free label"
+D068;test;SYNTHETIC;ambiguous;02;answer;My order is €45, who pays the return costs?;Under €50: €4.90 paid by the customer
+D069;validation;SYNTHETIC;easy;06;answer;Do these shoes run small?;"Size guide; compare with a well-fitting pair"
+D070;test;SYNTHETIC;easy;01;answer;I put the wrong address this morning, the order hasn't left yet. Can I correct it?;Address editable before shipping only
+D071;test;SYNTHETIC;ambiguous;08;answer;I've been waiting 4 days for an answer to my email, that's long.;Apology, acknowledgement of receipt, precise reply date (5 working days)
+D072;test;SYNTHETIC;trap;01;answer;My parcel is 6 working days late, I just want a precise delivery date.;"Carrier investigation; reply within 3 working days; do not promise a date"
+D073;test;SYNTHETIC;easy;02;answer;Is the return free for an €80 order?;Above €50: free at a pickup point
+D074;validation;SYNTHETIC;ambiguous;01;answer;I want to change the delivery address but my order has already shipped.;Address editable only before shipping
+D075;test;SYNTHETIC;ambiguous;02;answer;I received my parcel 35 days ago, can I still return it?;Beyond the 30-day deadline: polite refusal, no exception
+D076;test;SYNTHETIC;easy;03;answer;The zip of my jacket is broken, I received it 5 days ago.;"Defect: photos and order no.; replacement or refund; free label"
+D077;validation;SYNTHETIC;trap;03;escalate;The strap of my climbing helmet gave way mid-route, I got a big fright.;Product with a safety risk: escalate
+D078;test;SYNTHETIC;easy;04;answer;My payment was declined, what should I do?;"Check the card details; offer another payment method"
+D079;test;SYNTHETIC;easy;01;answer;My parcel shipped 8 working days ago and still isn't here. Is that normal?;"Delay beyond 5 working days: carrier investigation; reply within 3 working days"
+D080;validation;SYNTHETIC;easy;02;answer;I'd like to send back my shoes received 10 days ago, never worn.;Within 30 days, unworn product: send return label and steps

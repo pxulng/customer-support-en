@@ -1,0 +1,16 @@
+﻿id;set;origin;request;expected_procedure;expected_decision;hesitation;claude_initial_decision;corrected_by_paul_on
+R001;realistic;SYNTHETIC (written by Claude at Paul's request);hello ive ordered 3 days ago and still no tracking email, is that normal ??;01;answer;no;answer;
+R002;realistic;SYNTHETIC (written by Claude at Paul's request);Hi, my order arrived but i got a M instead of a L. can i swap? Havent worn it yet;02;answer;no;answer;
+R003;realistic;SYNTHETIC (written by Claude at Paul's request);The code WELCOME10 doesnt work and my order also left without me getting an invoice;04;answer;no;answer;
+R004;realistic;SYNTHETIC (written by Claude at Paul's request);Ive bought hiking shoes on sale at -30%, they hurt my feet after 2 outings, i want a refund;02;escalate;yes;escalate;
+R005;realistic;SYNTHETIC (written by Claude at Paul's request);URGENT my son is going hiking tomorrow and the backpack ive ordered hasnt arrived!!! i want delivery tomorrow;01;escalate;yes;escalate;
+R006;realistic;SYNTHETIC (written by Claude at Paul's request);Thanks a lot for your help yesterday, all sorted 👍;aucune;answer;no;answer;
+R007;realistic;SYNTHETIC (written by Claude at Paul's request);my water bottle leaks and im scared its dangerous for my daughter, she drinks from it every day;03;escalate;yes;escalate;
+R008;realistic;SYNTHETIC (written by Claude at Paul's request);Hello can i pay in 3 instalments for €85?;04;answer;no;answer;
+R009;realistic;SYNTHETIC (written by Claude at Paul's request);I'd like to delete my account and have you erase my data;07;escalate;yes;answer;2026-10-31
+R010;realistic;SYNTHETIC (written by Claude at Paul's request);ive received a parcel thats not for me, the name on the label is someone else with another address;aucune;escalate;no;escalate;
+R011;realistic;SYNTHETIC (written by Claude at Paul's request);You're useless. 3 emails and still no answer. Im going to leave a 1 star review everywhere;08;escalate;no;escalate;
+R012;realistic;SYNTHETIC (written by Claude at Paul's request);What size jersey for 1m78 75kg?;06;answer;no;answer;
+R013;realistic;SYNTHETIC (written by Claude at Paul's request);my order from last week says shipped but the tracking hasnt moved for 6 days;01;escalate;yes;answer;2026-10-31
+R014;realistic;SYNTHETIC (written by Claude at Paul's request);Can i return a bike helmet that ive never opened?;02;escalate;yes;answer;2026-10-31
+R015;realistic;SYNTHETIC (written by Claude at Paul's request);hi ive paid twice for the same order and my bank debited both for 2 weeks;04;escalate;no;escalate;

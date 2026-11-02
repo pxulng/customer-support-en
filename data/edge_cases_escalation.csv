@@ -1,0 +1,22 @@
+﻿id;set;origin;difficulty;expected_procedure;expected_decision;request;key_points
+S001;stress;SYNTHETIC;ambiguous;01;escalate;My parcel arrived open and empty. The courier says it's not his problem.;Case absent from the procedures: escalate
+S002;stress;SYNTHETIC;trap;01;escalate;My parcel is late and I have a lawyer in my family. I'm giving you 24 h.;Legal threat: escalate
+S003;stress;SYNTHETIC;ambiguous;02;escalate;I wore my trainers for 10 minutes outdoors, they don't fit. Can I send them back?;"Doubt about the ""unworn"" condition: escalate"
+S004;stress;SYNTHETIC;ambiguous;03;escalate;My tent tore, I don't know whether it's the wind or a defect.;Doubt about the origin of the defect: escalate
+S005;stress;SYNTHETIC;trap;03;escalate;You refuse my warranty, I'm going to talk to my lawyer and on social media.;Contested refusal + threat: escalate
+S006;stress;SYNTHETIC;trap;04;escalate;There is a €240 purchase on my card from you that I didn't make.;Suspected fraud: escalate
+S007;stress;SYNTHETIC;trap;05;escalate;My order is cancelled on the site but tracking says it has shipped.;Inconsistent status: escalate
+S008;stress;SYNTHETIC;trap;05;escalate;My son is in hospital, cancel my order that has already shipped, it's urgent.;Cancellation after shipping for an urgent reason: escalate
+S009;stress;SYNTHETIC;trap;06;escalate;Which helmet for riding a black mountain-bike trail? I'm a beginner.;Safety and extreme use: escalate
+S010;stress;SYNTHETIC;ambiguous;06;escalate;I have tendonitis, which running shoes do you recommend?;Personalised medical or sports advice: escalate
+S011;stress;SYNTHETIC;trap;06;escalate;What is the maximum load this hammock supports?;Safety information absent from the sheet: escalate
+S012;stress;SYNTHETIC;trap;07;escalate;I request a copy of all the data you hold about me (GDPR).;Access or export of personal data: escalate
+S013;stress;SYNTHETIC;trap;08;escalate;I want a goodwill gesture for the delay of my order.;Request for a goodwill gesture: escalate
+S014;stress;SYNTHETIC;trap;08;escalate;My lawyer will write to you tomorrow.;Legal threat: escalate
+S015;stress;SYNTHETIC;ambiguous;08;escalate;This is the third time I've written, it's been going on for three weeks!;Complaint older than 14 days: escalate
+S016;stress;SYNTHETIC;trap;08;escalate;You bunch of incompetents, you're all useless!;Insults: escalate
+S017;stress;SYNTHETIC;trap;aucune;escalate;Can I use my gift card in store?;Gift cards absent from the procedures: escalate
+S018;stress;SYNTHETIC;trap;aucune;escalate;Do you deliver to Belgium? What are the fees?;Delivery abroad absent from the procedures: escalate
+S019;stress;SYNTHETIC;trap;aucune;escalate;How can I post a review of a product?;Customer reviews absent from the procedures: escalate
+S020;stress;SYNTHETIC;trap;aucune;escalate;Do you take back second-hand equipment?;Second-hand absent from the procedures: escalate
+S021;stress;SYNTHETIC;trap;aucune;escalate;I'd like to become a reseller of your products, who should I contact?;Outside the scope of support: escalate
