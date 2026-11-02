@@ -100,7 +100,7 @@ Important setting: set "Maximum Number of Tokens" to 4000, otherwise the model's
 
 ## Another project in this portfolio
 
-[Media-prospecting preparation assistant](https://github.com/pxulng/assistant-preparation-prospection) (n8n + Claude, synthetic data; documentation in French): same evaluation approach (no-AI baseline, validation set used once, two models compared, blind human check, error log) on a different use case.
+[Media-prospecting preparation assistant](https://github.com/pxulng/prospecting-assistant) (n8n + Claude, synthetic data; documentation in French): same evaluation approach (no-AI baseline, validation set used once, two models compared, blind human check, error log) on a different use case.
 
 ## What remains to be done on this project
 
