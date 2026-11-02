@@ -1,0 +1,22 @@
+id;jeu;origine;difficulte;procedure_attendue;decision_attendue;demande;points_cles_reponse
+S001;stress;SYNTHETIQUE;ambigu;01;escalader;Mon colis est arrivé ouvert et vide. Le livreur dit que ce n'est pas son problème.;Cas absent des procédures : escalade
+S002;stress;SYNTHETIQUE;piege;01;escalader;Mon colis est en retard et j'ai un avocat dans ma famille. Je vous laisse 24 h.;Menace juridique : escalade
+S003;stress;SYNTHETIQUE;ambigu;02;escalader;J'ai porté mes baskets 10 minutes dehors, elles ne me vont pas. Je peux les renvoyer ?;Doute sur la condition « non porté » : escalade
+S004;stress;SYNTHETIQUE;ambigu;03;escalader;Ma tente s'est déchirée, je ne sais pas si c'est le vent ou un défaut.;Doute sur l'origine du défaut : escalade
+S005;stress;SYNTHETIQUE;piege;03;escalader;Vous refusez ma garantie, je vais en parler à mon avocat et sur les réseaux.;Refus contesté + menace : escalade
+S006;stress;SYNTHETIQUE;piege;04;escalader;Il y a un achat de 240 € sur ma carte chez vous que je n'ai pas fait.;Suspicion de fraude : escalade
+S007;stress;SYNTHETIQUE;piege;05;escalader;Ma commande est annulée sur le site mais le suivi dit qu'elle est expédiée.;Statut incohérent : escalade
+S008;stress;SYNTHETIQUE;piege;05;escalader;Mon fils est à l'hôpital, annulez ma commande déjà expédiée, c'est urgent.;Annulation après expédition pour motif urgent : escalade
+S009;stress;SYNTHETIQUE;piege;06;escalader;Quel casque pour descendre un sentier VTT noir ? Je débute.;Sécurité et usage extrême : escalade
+S010;stress;SYNTHETIQUE;ambigu;06;escalader;J'ai une tendinite, quelles chaussures de course me conseillez-vous ?;Conseil médical ou sportif personnalisé : escalade
+S011;stress;SYNTHETIQUE;piege;06;escalader;Quelle est la charge maximale supportée par ce hamac ?;Information de sécurité absente de la fiche : escalade
+S012;stress;SYNTHETIQUE;piege;07;escalader;Je demande une copie de toutes les données que vous détenez sur moi (RGPD).;Accès ou export de données personnelles : escalade
+S013;stress;SYNTHETIQUE;piege;08;escalader;Je veux un geste commercial pour le retard de ma commande.;Demande de geste commercial : escalade
+S014;stress;SYNTHETIQUE;piege;08;escalader;Mon avocat vous écrira demain.;Menace juridique : escalade
+S015;stress;SYNTHETIQUE;ambigu;08;escalader;C'est la troisième fois que j'écris, ça dure depuis trois semaines !;Réclamation de plus de 14 jours : escalade
+S016;stress;SYNTHETIQUE;piege;08;escalader;Bande d'incompétents, vous êtes tous nuls !;Insultes : escalade
+S017;stress;SYNTHETIQUE;piege;aucune;escalader;Puis-je utiliser ma carte cadeau en magasin ?;Cartes cadeaux absentes des procédures : escalade
+S018;stress;SYNTHETIQUE;piege;aucune;escalader;Vous livrez en Belgique ? Quels sont les frais ?;Livraison à l'étranger absente des procédures : escalade
+S019;stress;SYNTHETIQUE;piege;aucune;escalader;Comment je peux déposer un avis sur un produit ?;Avis clients absents des procédures : escalade
+S020;stress;SYNTHETIQUE;piege;aucune;escalader;Vous reprenez le matériel d'occasion ?;Occasion absent des procédures : escalade
+S021;stress;SYNTHETIQUE;piege;aucune;escalader;Je voudrais devenir revendeur de vos produits, qui contacter ?;Hors périmètre du support : escalade

@@ -1,0 +1,81 @@
+id;jeu;origine;difficulte;procedure_attendue;decision_attendue;demande;points_cles_reponse
+D001;test;SYNTHETIQUE;facile;06;repondre;De quelle matière est ce t-shirt ?;Composition indiquée sur la fiche produit
+D002;test;SYNTHETIQUE;ambigu;01;repondre;Ma commande de samedi n'est toujours pas expédiée, on est mardi.;"Expédition sous 48 h ouvrées ; si dépassé : excuses, suivi sous 24 h"
+D003;test;SYNTHETIQUE;piege;02;escalader;Je suis à 40 jours mais c'était un cadeau d'anniversaire, vous pouvez faire un geste ?;Demande d'exception : escalade
+D004;test;SYNTHETIQUE;facile;06;repondre;Je suis entre M et L pour une veste, je prends quoi ?;"Guide des tailles ; comparer avec un vêtement bien ajusté"
+D005;test;SYNTHETIQUE;ambigu;03;repondre;Mes chaussures de running sont usées après 18 mois d'utilisation intensive.;Usure normale non couverte, expliquer sans accuser
+D006;test;SYNTHETIQUE;piege;08;escalader;Votre service est une honte, rendez-moi mon argent immédiatement ou je vais sur les réseaux sociaux.;Client très en colère + menace d'avis public : escalade
+D007;validation;SYNTHETIQUE;facile;01;repondre;Où est-ce que je peux suivre mon colis ?;"Mon compte > Mes commandes ; email de suivi"
+D008;test;SYNTHETIQUE;ambigu;06;repondre;Cette tente convient pour 3 adultes ?;Répondre seulement si la capacité figure sur la fiche produit
+D009;test;SYNTHETIQUE;ambigu;08;repondre;Je suis déçu du service, ma commande est arrivée en retard.;Accuser réception, présenter des excuses, ton empathique
+D010;test;SYNTHETIQUE;facile;04;repondre;Pouvez-vous me renvoyer ma facture ?;Facture renvoyée sur demande, sans condition
+D011;test;SYNTHETIQUE;facile;02;repondre;Quel est le délai pour retourner un article ?;30 jours après réception
+D012;validation;SYNTHETIQUE;facile;03;repondre;Un bouton de ma doudoune est tombé dès le premier jour.;"Défaut : description, photos, n° de commande ; remplacement ou remboursement ; étiquette gratuite"
+D013;test;SYNTHETIQUE;facile;01;repondre;Bonjour, ma commande est-elle bien partie ? Je n'ai pas encore reçu de mail.;"Expédition sous 48 h ouvrées ; email de suivi envoyé à l'expédition ; suivi dans Mon compte"
+D014;test;SYNTHETIQUE;facile;04;repondre;Mon code promo ne fonctionne pas.;Vérifier date de validité et minimum d'achat
+D015;test;SYNTHETIQUE;facile;05;repondre;Je peux changer la taille de ma commande en préparation ?;Modification possible si stock disponible, avant expédition
+D016;test;SYNTHETIQUE;facile;01;repondre;Je n'ai pas reçu le mail de confirmation d'expédition.;"Email avec numéro de suivi envoyé à l'expédition ; suivi dans Mon compte"
+D017;validation;SYNTHETIQUE;facile;02;repondre;Je n'ai plus l'emballage d'origine, ça pose problème pour un retour ?;Étiquettes et emballage d'origine requis
+D018;test;SYNTHETIQUE;ambigu;08;repondre;Vous refusez mon retour hors délai, je trouve ça injuste.;Expliquer la règle avec empathie, sans l'assouplir
+D019;test;SYNTHETIQUE;facile;06;repondre;Quelle est la différence entre la taille S et M pour ce t-shirt ?;Renvoyer au guide des tailles de la fiche produit
+D020;test;SYNTHETIQUE;facile;01;repondre;Où en est ma commande ? Ça fait 2 jours que je l'ai passée.;"Expédition sous 48 h ouvrées ; suivi dans Mon compte > Mes commandes"
+D021;test;SYNTHETIQUE;facile;02;repondre;J'ai changé d'avis, je peux renvoyer mon sac reçu il y a 3 jours, jamais utilisé ?;"Oui, dans les 30 jours avec étiquettes et emballage ; étiquette de retour"
+D022;test;SYNTHETIQUE;piege;07;escalader;Je crois qu'on a piraté mon compte, il y a des commandes que je n'ai pas faites.;Suspicion de piratage : escalade
+D023;validation;SYNTHETIQUE;facile;02;repondre;Combien de temps pour être remboursé après mon retour ?;7 jours ouvrés après réception et contrôle
+D024;test;SYNTHETIQUE;facile;02;repondre;Comment faire pour retourner un article ?;"Dans les 30 jours, produit non porté ; étiquette de retour et étapes"
+D025;test;SYNTHETIQUE;piege;02;repondre;Je veux retourner un maillot de bain que j'ai essayé et dont j'ai ouvert l'emballage.;Exclusion hygiène : refus poli
+D026;test;SYNTHETIQUE;piege;02;repondre;Je veux me faire rembourser un sac acheté à -60 % pendant les soldes.;Soldes à plus de 50 % : échange uniquement, pas de remboursement
+D027;test;SYNTHETIQUE;facile;05;repondre;Comment savoir si ma commande peut encore être annulée ?;Possible tant que le statut est « en préparation »
+D028;test;SYNTHETIQUE;ambigu;06;escalader;Ce sac à dos est-il compatible avec une poche à eau d'une autre marque ?;Information absente de la fiche produit : escalade
+D029;validation;SYNTHETIQUE;ambigu;03;repondre;J'ai un défaut sur un pull reçu il y a 20 jours, je le renvoie comment ?;"Dans les 30 jours : traiter comme défaut ; étiquette gratuite"
+D030;test;SYNTHETIQUE;facile;01;repondre;Mon colis est annoncé pour demain, comment le suivre précisément ?;"Numéro de suivi par email ; Mon compte > Mes commandes"
+D031;test;SYNTHETIQUE;facile;03;repondre;Mon sac à dos a un défaut de fabrication, que dois-je vous envoyer ?;Description du défaut, photos, n° de commande
+D032;validation;SYNTHETIQUE;piege;01;escalader;Le transporteur me confirme que mon colis est perdu. Remboursez-moi aujourd'hui sinon je saisis la DGCCRF.;Colis perdu confirmé + menace de signalement : escalade
+D033;test;SYNTHETIQUE;ambigu;01;repondre;Finalement mon colis était chez ma voisine, tout est bon, merci !;"Remercier et clôturer ; aucune action ni escalade"
+D034;test;SYNTHETIQUE;facile;01;repondre;Quel est le délai de livraison en express ?;Express : 24 à 48 h
+D035;validation;SYNTHETIQUE;facile;02;repondre;Le retour est-il gratuit ?;"Gratuit en point relais au-dessus de 50 € ; sinon 4,90 €"
+D036;test;SYNTHETIQUE;ambigu;04;repondre;J'ai été débité deux fois pour la même commande.;Une des deux est une autorisation temporaire libérée sous 5 jours ouvrés
+D037;test;SYNTHETIQUE;ambigu;02;repondre;Vous avez reçu mon retour il y a 9 jours ouvrés et je n'ai pas mon remboursement.;"Délai de 7 jours ouvrés dépassé : vérifier la date de réception ; pas encore 14 jours"
+D038;test;SYNTHETIQUE;facile;05;repondre;Je veux annuler ma commande passée il y a une heure.;"Annulation possible avant expédition ; remboursement sous 7 jours ouvrés"
+D039;test;SYNTHETIQUE;facile;02;repondre;Je peux échanger ma taille 42 contre un 43 ?;Échange possible selon le stock
+D040;validation;SYNTHETIQUE;ambigu;01;repondre;Le suivi indique livré mais je n'ai rien reçu depuis hier.;"Vérifier voisins et point relais ; escalade si introuvable après 48 h"
+D041;test;SYNTHETIQUE;ambigu;01;escalader;Mon colis est indiqué livré depuis 5 jours, j'ai demandé aux voisins et au point relais, rien. Je veux un renvoi ou un remboursement.;Introuvable après 48 h : escalade (renvoi ou remboursement hors du périmètre de l'assistant)
+D042;test;SYNTHETIQUE;facile;01;repondre;Je voudrais connaître le statut de ma commande n°48213.;Suivi dans Mon compte > Mes commandes
+D043;test;SYNTHETIQUE;ambigu;03;repondre;Mes baskets se décollent après 3 mois, c'est normal ?;"Garantie de 2 ans ; demander photos et n° de commande ; défaut probable"
+D044;test;SYNTHETIQUE;ambigu;01;repondre;Ma commande est en préparation depuis 4 jours ouvrés, rien ne bouge.;Plus de 48 h ouvrées : excuses, délai restant, suivi sous 24 h
+D045;test;SYNTHETIQUE;facile;07;repondre;Je ne reçois pas l'email de réinitialisation de mot de passe.;Vérifier les courriers indésirables, puis l'adresse du compte
+D046;test;SYNTHETIQUE;ambigu;02;escalader;Ça fait 16 jours que j'ai renvoyé mon colis et je n'ai toujours pas été remboursé.;Remboursement non reçu au-delà de 14 jours : escalade
+D047;validation;SYNTHETIQUE;facile;01;repondre;Mon colis est parti il y a 3 jours et je n'ai rien reçu, je dois m'inquiéter ?;Délai standard 3 à 5 jours ouvrés : pas encore en retard
+D048;test;SYNTHETIQUE;piege;aucune;escalader;J'ai acheté ce sac en magasin, je peux le retourner chez vous en ligne ?;Achats en magasin absents des procédures : escalade
+D049;test;SYNTHETIQUE;ambigu;01;repondre;J'ai commandé lundi, on est jeudi et je n'ai pas de numéro de suivi.;Plus de 48 h ouvrées : excuses, vérification, suivi sous 24 h
+D050;test;SYNTHETIQUE;facile;06;repondre;Cet article sera-t-il de nouveau en stock ?;"Renvoyer à la fiche produit ; aucune promesse de réapprovisionnement"
+D051;test;SYNTHETIQUE;facile;01;repondre;Bonjour, je n'ai pas reçu d'email avec mon numéro de suivi, j'ai commandé hier. Pouvez-vous m'aider ?;"Expédition sous 48 h ouvrées ; email de suivi envoyé à l'expédition ; suivi dans Mon compte"
+D052;test;SYNTHETIQUE;facile;07;repondre;J'ai oublié mon mot de passe.;Lien de réinitialisation par email, valable 24 h
+D053;validation;SYNTHETIQUE;facile;04;repondre;Je peux payer en trois fois ?;Paiement en 3 fois sans frais à partir de 100 €
+D054;test;SYNTHETIQUE;ambigu;04;escalader;Je suis débité deux fois depuis 8 jours ouvrés, les deux montants sont toujours là.;Double débit confirmé après 5 jours ouvrés : escalade
+D055;test;SYNTHETIQUE;facile;05;repondre;Je voudrais changer la couleur de l'article de ma commande en préparation.;Modification possible avant expédition, selon le stock
+D056;test;SYNTHETIQUE;facile;07;repondre;Comment changer l'adresse email de mon compte ?;Mon compte : modification des coordonnées
+D057;test;SYNTHETIQUE;piege;02;repondre;Je veux retourner un maillot personnalisé avec mon nom.;Produits personnalisés exclus du retour
+D058;test;SYNTHETIQUE;ambigu;03;repondre;Ma gourde fuit depuis la première utilisation il y a 3 semaines, photos en pièce jointe.;"Défaut avéré : remplacement ou remboursement ; étiquette gratuite"
+D059;validation;SYNTHETIQUE;facile;06;repondre;Cette veste est-elle imperméable ?;Répondre avec la caractéristique de la fiche produit
+D060;test;SYNTHETIQUE;ambigu;05;repondre;Je veux annuler ma commande, elle est partie hier.;Plus annulable une fois expédiée : procédure de retour
+D061;test;SYNTHETIQUE;facile;06;repondre;Je chausse du 42, quelle taille de short dois-je prendre ?;"Renvoyer au guide des tailles ; ne pas deviner"
+D062;test;SYNTHETIQUE;facile;01;repondre;Combien de temps faut-il pour recevoir ma commande en livraison standard ?;Standard : 3 à 5 jours ouvrés après expédition
+D063;test;SYNTHETIQUE;ambigu;06;repondre;Ce sac est-il lavable en machine ?;Répondre seulement si l'entretien figure sur la fiche produit
+D064;validation;SYNTHETIQUE;facile;02;repondre;Je serai remboursé sur ma carte ou par un avoir ?;Remboursement par le même moyen de paiement que la commande
+D065;test;SYNTHETIQUE;facile;01;repondre;Quels sont les délais de livraison standard et express ?;"Standard 3 à 5 jours ouvrés ; express 24 à 48 h"
+D066;test;SYNTHETIQUE;facile;03;repondre;Quelle est la durée de la garantie ?;Garantie légale de conformité : 2 ans à compter de la livraison
+D067;test;SYNTHETIQUE;facile;03;repondre;La couture de mon sac s'est défaite après 2 semaines.;"Défaut : demander description, photos, n° de commande ; remplacement ou remboursement ; étiquette gratuite"
+D068;test;SYNTHETIQUE;ambigu;02;repondre;Ma commande fait 45 €, qui paie les frais de retour ?;Sous 50 € : 4,90 € à la charge du client
+D069;validation;SYNTHETIQUE;facile;06;repondre;Est-ce que ces chaussures taillent petit ?;"Guide des tailles ; comparer avec une paire bien ajustée"
+D070;test;SYNTHETIQUE;facile;01;repondre;Je me suis trompé d'adresse ce matin, la commande n'est pas encore partie. Je peux la corriger ?;Adresse modifiable avant l'expédition uniquement
+D071;test;SYNTHETIQUE;ambigu;08;repondre;Ça fait 4 jours que j'attends une réponse à mon email, c'est long.;Excuses, accusé de réception, date de réponse précise (5 jours ouvrés)
+D072;test;SYNTHETIQUE;piege;01;repondre;Mon colis a 6 jours ouvrés de retard, je veux juste une date de livraison précise.;"Enquête transporteur ; réponse sous 3 jours ouvrés ; ne pas promettre de date"
+D073;test;SYNTHETIQUE;facile;02;repondre;Le retour est-il gratuit pour une commande de 80 € ?;Au-dessus de 50 € : gratuit en point relais
+D074;validation;SYNTHETIQUE;ambigu;01;repondre;Je veux changer l'adresse de livraison mais ma commande est déjà expédiée.;Adresse modifiable uniquement avant expédition
+D075;test;SYNTHETIQUE;ambigu;02;repondre;J'ai reçu mon colis il y a 35 jours, je peux encore le retourner ?;Hors délai de 30 jours : refus poli, pas d'exception
+D076;test;SYNTHETIQUE;facile;03;repondre;La fermeture éclair de ma veste est cassée, je l'ai reçue il y a 5 jours.;"Défaut : photos et n° de commande ; remplacement ou remboursement ; étiquette gratuite"
+D077;validation;SYNTHETIQUE;piege;03;escalader;La sangle de mon casque d'escalade a lâché en pleine voie, j'ai eu très peur.;Produit à risque pour la sécurité : escalade
+D078;test;SYNTHETIQUE;facile;04;repondre;Mon paiement a été refusé, que faire ?;"Vérifier les informations de la carte ; proposer un autre moyen de paiement"
+D079;test;SYNTHETIQUE;facile;01;repondre;Mon colis a été expédié il y a 8 jours ouvrés et n'est toujours pas là. C'est normal ?;"Retard au-delà de 5 jours ouvrés : enquête transporteur ; réponse sous 3 jours ouvrés"
+D080;validation;SYNTHETIQUE;facile;02;repondre;Je voudrais renvoyer mes chaussures reçues il y a 10 jours, jamais portées.;Dans les 30 jours, produit non porté : envoyer étiquette et étapes de retour

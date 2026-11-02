@@ -1,0 +1,16 @@
+﻿id;jeu;origine;demande;procedure_attendue;decision_attendue;hesitation;decision_initiale_claude;corrige_par_paul_le
+R001;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);bonjour jai commandé y a 3 jours et jai tjrs pas de mail de suivi, normal ??;01;repondre;non;repondre;
+R002;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Salut, ma commande est bien arrivée mais jai pris du M au lieu du L. je peux changer ? Jai pas encore porté;02;repondre;non;repondre;
+R003;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Le code BIENVENUE10 marche pas et en plus ma commande est partie sans que je recoive de facture;04;repondre;non;repondre;
+R004;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Jai acheté des chaussures de rando en promo à -30%, elles me font mal aux pieds apres 2 sorties, je veux un remboursement;02;escalader;oui;escalader;
+R005;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);URGENT mon fils part en randonnée demain et le sac à dos que jai commandé est pas arrivé!!! je veux une livraison demain;01;escalader;oui;escalader;
+R006;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Merci beaucoup pour votre aide hier, tout est réglé 👍;aucune;repondre;non;repondre;
+R007;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);ma gourde fuit et jai peur que ca soit dangereux pour ma fille, elle boit dedans tous les jours;03;escalader;oui;escalader;
+R008;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Bonjour est ce que je peux payer en 3 fois pour 85€ ?;04;repondre;non;repondre;
+R009;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Je voudrais supprimer mon compte et que vous effaciez mes données;07;escalader;oui;repondre;2026-10-31
+R010;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);j'ai reçu un colis qui est pas pour moi, le nom sur létiquette c'est quelquun d'autre avec une autre adresse;aucune;escalader;non;escalader;
+R011;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Vous êtes nuls. 3 mails et toujours aucune réponse. Je vais mettre un avis 1 étoile partout;08;escalader;non;escalader;
+R012;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Quelle taille de maillot pour 1m78 75kg ?;06;repondre;non;repondre;
+R013;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);ma commande de la semaine dernière est indiquée expédiée mais le suivi bouge pas depuis 6 jours;01;escalader;oui;repondre;2026-10-31
+R014;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);Je peux retourner un casque de vélo que jai jamais ouvert ?;02;escalader;oui;repondre;2026-10-31
+R015;realiste;SYNTHETIQUE (écrit par Claude à la demande de Paul);bjr jai payé 2 fois la meme commande et ma banque a debité les 2 depuis 2 sem;04;escalader;non;escalader;
