@@ -1,0 +1,125 @@
+{
+  "name": "Support - triage and draft v1 (EN)",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "df2fee9d-378e-4b65-b819-11c26e33060a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "claude-haiku-5-5",
+          "mode": "list",
+          "cachedResultName": "claude-haiku-5-5"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are the customer-support assistant of a fictional sports retailer. You help a human advisor: you classify the customer's request, decide whether you can answer it, and write a draft that the advisor will review.\n\nABSOLUTE RULES\n1. Rely only on the procedures below. Never invent a delay, an amount, a rule or an exception.\n2. Choose decision = \"escalader\" (escalate) as soon as: the situation appears under the \"To escalate\" heading of a procedure; the information requested is absent from the procedures; the request is out of scope (gift cards, delivery abroad, in-store purchases, reviews, second-hand equipment, resellers, etc.); the customer threatens (lawyer, report, social media) or is very angry; it concerns safety, personal data or fraud; or if you have a doubt.\n3. Never promise a goodwill gesture, an exception, a refund outside the rules or a precise date not provided for by the procedures.\n4. A customer who says thank you or no longer needs help: decision = \"repondre\" (answer), draft = a short closing message.\n5. Write in English, in a polite and warm tone, without blaming the customer. Draft of 2 to 6 sentences.\n\nOUTPUT FORMAT\nReply only with a valid JSON object on a single logical line, with no text before or after, with exactly these keys (keys and decision values stay in French so that the workflow can read them):\n- \"procedure\": \"01\" to \"08\", or \"aucune\" if no procedure matches\n- \"decision\": \"repondre\" (answer) or \"escalader\" (escalate)\n- \"procedure_citee\": the title of the procedure used, or \"aucune\"\n- \"raison\": one sentence justifying your decision\n- \"brouillon\": if decision = \"repondre\", the reply to the customer; if decision = \"escalader\", a short polite holding message that commits to nothing (for example: an advisor will get back to the customer)\n\nPROCEDURES (fictional)\n\nProcedure 01: Delivery and order tracking\n- Times: standard delivery 3 to 5 working days after shipping; express delivery 24 to 48 h; shipping within 48 working hours of the order.\n- An email with the tracking number is sent at shipping; tracking can be viewed in \"My account > My orders\".\n- Order not shipped after 48 working hours: apologise, state the remaining time, offer tracking within 24 h.\n- Late parcel (more than 5 working days after shipping): open an investigation with the carrier; reply to the customer within 3 working days.\n- Parcel marked delivered but not received: ask to check with neighbours and the pickup point; escalate if the parcel is still not found after 48 h.\n- Wrong address: editable only before shipping.\n- To escalate: confirmed lost parcel, refund or resend; customer who mentions legal action or a report.\n\nProcedure 02: Returns and refunds\n- Return period: 30 days after receipt. Product unworn or unused, with labels and original packaging.\n- Free return at a pickup point for orders over €50; otherwise €4.90 paid by the customer.\n- Refund within 7 working days after receipt of the returned parcel and inspection, by the same payment method as the order. Exchange possible depending on stock.\n- Exclusions: opened underwear and swimwear (hygiene); personalised products; items sold at more than 50% off (exchange only, no refund).\n- Request within the period and conditions met: send the return label and the steps. Request outside the period: refuse politely, with no exception.\n- Customer with no refund after 7 working days: check the date the return was received.\n- To escalate: any request outside the written conditions (goodwill gesture, exception); refund not received beyond 14 days.\n\nProcedure 03: Warranty and defective product\n- Legal conformity warranty of 2 years from delivery. The defect must predate the request and not be caused by misuse.\n- Handling: ask for a description of the defect, photos and the order number. If the defect is confirmed: offer replacement or refund. Free return label for a defective product, whatever the amount.\n- Defect visible on receipt: replacement or refund. Normal wear after long use: explain that it is not covered, without blaming the customer. Defect within 30 days: treat as a return for a defect.\n- To escalate: doubt about the origin of the defect (use or manufacture); product with a safety risk (helmet, harness, combat-sport equipment); customer who threatens legal action or contests a refusal.\n\nProcedure 04: Payment and invoicing\n- Payment methods: bank card, PayPal, payment in 3 instalments at no cost from €100. Payment is debited when the order is confirmed.\n- Invoice: sent by email at shipping and available in \"My account > My orders\"; resent on request, without condition. Billing name or address editable only before shipping.\n- Payment declined: check the card details, offer another payment method.\n- Double charge: one of the two amounts is a temporary authorisation, released within 5 working days; check first.\n- Promo code that does not work: check the validity date and the minimum purchase.\n- To escalate: double charge confirmed after 5 working days; suspected fraud or unauthorised payment; request for an invoice with a specific professional VAT.\n\nProcedure 05: Order change and cancellation\n- Cancellation or change possible as long as the order has not shipped (status \"in preparation\"). Once shipped, it can no longer be cancelled: follow the return procedure (procedure 02).\n- Refund of a cancelled order: within 7 working days.\n- Change of address or size before shipping: possible if stock allows. Cancellation before shipping: confirm by email.\n- To escalate: order with an inconsistent status (cancelled but shipped); customer who demands cancellation after shipping citing an urgent reason.\n\nProcedure 06: Product and size questions\n- Sources: the product sheet on the site (characteristics, size guide, composition). Answer only from this information, which you do not have here: if the question asks for a specific detail of the sheet, say that it is on the product sheet.\n- Sizes: refer to the size guide on the product sheet; advise comparing with a well-fitting garment; do not guess the customer's size.\n- Availability: refer to the product sheet; no promise of restocking.\n- To escalate: technical question absent from the product sheet; safety or extreme-use question (helmet, climbing); request for personalised medical or sports advice.\n\nProcedure 07: Customer account\n- Forgotten password: reset link sent by email, valid 24 h. Email not received: check the junk folder, then the account address.\n- Change of email or contact details: possible in \"My account\". Address update: \"My account > My addresses\". Newsletter unsubscribe: link at the bottom of every email.\n- Account deletion: on written request, processed within 30 days.\n- To escalate: suspected account hacking; request for access to or export of personal data; any exchange containing sensitive data.\n\nProcedure 08: Complaints\n- Acknowledgement within 24 h; final reply within 5 working days. Tone: acknowledge the problem, apologise sincerely, never blame the customer.\n- Late support reply: apologise and give a precise date. Customer unhappy with a refusal that follows the rules: explain the rule with empathy, without changing it.\n- To escalate (always): legal threat, lawyer, report, announced public review; request for a goodwill gesture or an exception; complaint lasting more than 14 days; very angry or insulting customer.\n\nCUSTOMER REQUEST\n{{ $json.demande }}"
+            }
+          ]
+        },
+        "options": {
+          "maxTokens": 4000
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.anthropic",
+      "typeVersion": 1,
+      "position": [
+        448,
+        0
+      ],
+      "id": "284d477d-a897-4858-9cd4-ed85f99fa6e3",
+      "name": "Message a model",
+      "credentials": {
+        "anthropicApi": {
+          "id": "whjjYXkq4aRmztQK",
+          "name": "Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Code node \"Demandes\" (mode: Run Once for All Items)\n// 64 SYNTHETIC requests of the test set (English translation). Set LIMITE to 5 for a first trial, then to 64.\nconst LIMITE = 64;\nconst demandes = [\n {\n  \"id\": \"D001\",\n  \"demande\": \"What is this t-shirt made of?\"\n },\n {\n  \"id\": \"D002\",\n  \"demande\": \"My order from Saturday still hasn't shipped, and it's Tuesday.\"\n },\n {\n  \"id\": \"D003\",\n  \"demande\": \"I'm at day 40 but it was a birthday present, can you make a gesture?\"\n },\n {\n  \"id\": \"D004\",\n  \"demande\": \"I'm between M and L for a jacket, which should I take?\"\n },\n {\n  \"id\": \"D005\",\n  \"demande\": \"My running shoes are worn out after 18 months of intensive use.\"\n },\n {\n  \"id\": \"D006\",\n  \"demande\": \"Your service is a disgrace, give me my money back right now or I'm going to social media.\"\n },\n {\n  \"id\": \"D008\",\n  \"demande\": \"Does this tent sleep 3 adults?\"\n },\n {\n  \"id\": \"D009\",\n  \"demande\": \"I'm disappointed with the service, my order arrived late.\"\n },\n {\n  \"id\": \"D010\",\n  \"demande\": \"Can you resend my invoice?\"\n },\n {\n  \"id\": \"D011\",\n  \"demande\": \"What is the deadline to return an item?\"\n },\n {\n  \"id\": \"D013\",\n  \"demande\": \"Hello, has my order left yet? I haven't received an email.\"\n },\n {\n  \"id\": \"D014\",\n  \"demande\": \"My promo code doesn't work.\"\n },\n {\n  \"id\": \"D015\",\n  \"demande\": \"Can I change the size of my order that is being prepared?\"\n },\n {\n  \"id\": \"D016\",\n  \"demande\": \"I didn't receive the shipping confirmation email.\"\n },\n {\n  \"id\": \"D018\",\n  \"demande\": \"You refuse my late return, I think that's unfair.\"\n },\n {\n  \"id\": \"D019\",\n  \"demande\": \"What is the difference between size S and M for this t-shirt?\"\n },\n {\n  \"id\": \"D020\",\n  \"demande\": \"Where is my order? It's been 2 days since I placed it.\"\n },\n {\n  \"id\": \"D021\",\n  \"demande\": \"I changed my mind, can I send back my bag received 3 days ago, never used?\"\n },\n {\n  \"id\": \"D022\",\n  \"demande\": \"I think my account has been hacked, there are orders I didn't place.\"\n },\n {\n  \"id\": \"D024\",\n  \"demande\": \"How do I return an item?\"\n },\n {\n  \"id\": \"D025\",\n  \"demande\": \"I want to return a swimsuit that I tried on and whose packaging I opened.\"\n },\n {\n  \"id\": \"D026\",\n  \"demande\": \"I want a refund on a bag bought at -60% during the sales.\"\n },\n {\n  \"id\": \"D027\",\n  \"demande\": \"How can I know whether my order can still be cancelled?\"\n },\n {\n  \"id\": \"D028\",\n  \"demande\": \"Is this backpack compatible with a hydration bladder from another brand?\"\n },\n {\n  \"id\": \"D030\",\n  \"demande\": \"My parcel is announced for tomorrow, how can I track it precisely?\"\n },\n {\n  \"id\": \"D031\",\n  \"demande\": \"My backpack has a manufacturing defect, what should I send you?\"\n },\n {\n  \"id\": \"D033\",\n  \"demande\": \"Actually my parcel was at my neighbour's, all good, thanks!\"\n },\n {\n  \"id\": \"D034\",\n  \"demande\": \"What is the delivery time for express?\"\n },\n {\n  \"id\": \"D036\",\n  \"demande\": \"I was charged twice for the same order.\"\n },\n {\n  \"id\": \"D037\",\n  \"demande\": \"You received my return 9 working days ago and I don't have my refund.\"\n },\n {\n  \"id\": \"D038\",\n  \"demande\": \"I want to cancel my order placed an hour ago.\"\n },\n {\n  \"id\": \"D039\",\n  \"demande\": \"Can I exchange my size 42 for a 43?\"\n },\n {\n  \"id\": \"D041\",\n  \"demande\": \"My parcel has been marked delivered for 5 days, I asked the neighbours and the pickup point, nothing. I want a resend or a refund.\"\n },\n {\n  \"id\": \"D042\",\n  \"demande\": \"I'd like to know the status of my order no. 48213.\"\n },\n {\n  \"id\": \"D043\",\n  \"demande\": \"My trainers are coming unstuck after 3 months, is that normal?\"\n },\n {\n  \"id\": \"D044\",\n  \"demande\": \"My order has been in preparation for 4 working days, nothing is moving.\"\n },\n {\n  \"id\": \"D045\",\n  \"demande\": \"I'm not receiving the password reset email.\"\n },\n {\n  \"id\": \"D046\",\n  \"demande\": \"It's been 16 days since I sent my parcel back and I still haven't been refunded.\"\n },\n {\n  \"id\": \"D048\",\n  \"demande\": \"I bought this bag in store, can I return it to you online?\"\n },\n {\n  \"id\": \"D049\",\n  \"demande\": \"I ordered on Monday, it's Thursday and I have no tracking number.\"\n },\n {\n  \"id\": \"D050\",\n  \"demande\": \"Will this item be back in stock?\"\n },\n {\n  \"id\": \"D051\",\n  \"demande\": \"Hello, I haven't received an email with my tracking number, I ordered yesterday. Can you help me?\"\n },\n {\n  \"id\": \"D052\",\n  \"demande\": \"I forgot my password.\"\n },\n {\n  \"id\": \"D054\",\n  \"demande\": \"I've been charged twice for 8 working days, both amounts are still there.\"\n },\n {\n  \"id\": \"D055\",\n  \"demande\": \"I'd like to change the colour of the item in my order that is being prepared.\"\n },\n {\n  \"id\": \"D056\",\n  \"demande\": \"How do I change the email address of my account?\"\n },\n {\n  \"id\": \"D057\",\n  \"demande\": \"I want to return a jersey personalised with my name.\"\n },\n {\n  \"id\": \"D058\",\n  \"demande\": \"My water bottle has leaked since the first use 3 weeks ago, photos attached.\"\n },\n {\n  \"id\": \"D060\",\n  \"demande\": \"I want to cancel my order, it left yesterday.\"\n },\n {\n  \"id\": \"D061\",\n  \"demande\": \"I wear a 42 shoe, which size of shorts should I take?\"\n },\n {\n  \"id\": \"D062\",\n  \"demande\": \"How long does it take to receive my order with standard delivery?\"\n },\n {\n  \"id\": \"D063\",\n  \"demande\": \"Is this bag machine-washable?\"\n },\n {\n  \"id\": \"D065\",\n  \"demande\": \"What are the standard and express delivery times?\"\n },\n {\n  \"id\": \"D066\",\n  \"demande\": \"How long is the warranty?\"\n },\n {\n  \"id\": \"D067\",\n  \"demande\": \"The seam of my bag came apart after 2 weeks.\"\n },\n {\n  \"id\": \"D068\",\n  \"demande\": \"My order is €45, who pays the return costs?\"\n },\n {\n  \"id\": \"D070\",\n  \"demande\": \"I put the wrong address this morning, the order hasn't left yet. Can I correct it?\"\n },\n {\n  \"id\": \"D071\",\n  \"demande\": \"I've been waiting 4 days for an answer to my email, that's long.\"\n },\n {\n  \"id\": \"D072\",\n  \"demande\": \"My parcel is 6 working days late, I just want a precise delivery date.\"\n },\n {\n  \"id\": \"D073\",\n  \"demande\": \"Is the return free for an €80 order?\"\n },\n {\n  \"id\": \"D075\",\n  \"demande\": \"I received my parcel 35 days ago, can I still return it?\"\n },\n {\n  \"id\": \"D076\",\n  \"demande\": \"The zip of my jacket is broken, I received it 5 days ago.\"\n },\n {\n  \"id\": \"D078\",\n  \"demande\": \"My payment was declined, what should I do?\"\n },\n {\n  \"id\": \"D079\",\n  \"demande\": \"My parcel shipped 8 working days ago and still isn't here. Is that normal?\"\n }\n];\nreturn demandes.slice(0, LIMITE).map(d => ({ json: d }));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "e61560cb-a0d2-4990-8def-37373908c846",
+      "name": "Demandes"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Code node \"Lecture\" (mode: Run Once for All Items)\n// Reads Claude's JSON answer and attaches it to the original request.\n// If the answer is unreadable, escalate for safety (never an automatic reply when in doubt).\nconst demandes = $('Demandes').all();\nconst sorties = [];\n\n$input.all().forEach((item, i) => {\n  // Claude may return a \"thinking\" block before the text: take the block of type \"text\".\n  const bloc = (item.json.content ?? []).find((c) => c.type === 'text');\n  const brut = bloc?.text ?? '';\n  let r;\n  try {\n    const m = brut.match(/\\{[\\s\\S]*\\}/);\n    r = JSON.parse(m ? m[0] : brut);\n  } catch (e) {\n    r = {\n      procedure: 'ERREUR_JSON',\n      decision: 'escalader',\n      procedure_citee: '',\n      raison: 'Unreadable answer, escalating for safety',\n      brouillon: brut,\n    };\n  }\n  sorties.push({\n    json: {\n      id: demandes[i].json.id,\n      demande: demandes[i].json.demande,\n      procedure: r.procedure,\n      decision: r.decision,\n      procedure_citee: r.procedure_citee,\n      raison: r.raison,\n      brouillon: r.brouillon,\n      input_tokens: item.json.usage?.input_tokens ?? null,\n      output_tokens: item.json.usage?.output_tokens ?? null,\n    },\n  });\n});\n\nreturn sorties;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        816,
+        0
+      ],
+      "id": "14cce38e-1fda-41b2-a9cd-bdbdccef0c7c",
+      "name": "Bloc de lecture"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Demandes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Demandes": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "Bloc de lecture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c49a1568-f049-4827-8a76-71a7b8c45106",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d8f17db6e37bb5fc57c4d219f72a1cdd86c52059c44243f6c67186aa45cedbd8"
+  },
+  "nodeGroups": [],
+  "id": "wIvjnfumWxYp6JjF",
+  "tags": []
+}
